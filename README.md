@@ -2,11 +2,11 @@
 
 Static GitHub Pages site for [Chamuka Labs](https://chamuka.ai), an applied AI lab.
 
-The public site is [https://chamuka-inc.github.io/](https://chamuka-inc.github.io/). There is no build step. `index.html` is the page.
+The public site is [https://chamuka-labs.github.io/](https://chamuka-labs.github.io/). There is no build step. `index.html` is the page.
 
 ## Daybreak sources
 
-Visual design comes from [Daybreak](https://github.com/chamuka-inc/chamuka-design), the Chamuka Labs design system, at commit [`48a8df12547d9dd79a138953b6c4ec16be9fe45b`](https://github.com/chamuka-inc/chamuka-design/commit/48a8df12547d9dd79a138953b6c4ec16be9fe45b).
+Visual design comes from [Daybreak](https://github.com/chamuka-labs/chamuka-design), the Chamuka Labs design system, at commit [`48a8df12547d9dd79a138953b6c4ec16be9fe45b`](https://github.com/chamuka-labs/chamuka-design/commit/48a8df12547d9dd79a138953b6c4ec16be9fe45b).
 
 Vendored from that repository:
 
@@ -26,4 +26,4 @@ Illustrations in `assets/illustrations/` are original site artwork in the Daybre
 
 ## License
 
-Code and page copy are licensed under Apache-2.0. See [LICENSE](LICENSE). The Daybreak names and marks are trademarks of Chamuka Labs; see [TRADEMARKS.md](https://github.com/chamuka-inc/chamuka-design/blob/main/TRADEMARKS.md) in the design system. Font files keep their SIL Open Font License, in `fonts/`.
+Code and page copy are licensed under Apache-2.0. See [LICENSE](LICENSE). The Daybreak names and marks are trademarks of Chamuka Labs; see [TRADEMARKS.md](https://github.com/chamuka-labs/chamuka-design/blob/main/TRADEMARKS.md) in the design system. Font files keep their SIL Open Font License, in `fonts/`.

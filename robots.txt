@@ -43,4 +43,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://chamuka-inc.github.io/sitemap.xml
+Sitemap: https://chamuka-labs.github.io/sitemap.xml

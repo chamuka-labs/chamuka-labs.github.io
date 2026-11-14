@@ -2,8 +2,8 @@
 
 > Chamuka Labs is an applied AI lab: we ship AI-native products, put research into practice, and build tools for AI agents.
 
-Website: https://chamuka-inc.github.io/
-Organization: https://github.com/chamuka-inc
+Website: https://chamuka-labs.github.io/
+Organization: https://github.com/chamuka-labs
 Lab site: https://chamuka.ai
 License: Apache-2.0
 Work and general: dev@chamuka.ai
@@ -11,7 +11,7 @@ Security and conduct: security@chamuka.ai
 
 DrawIt is an experiment under agent and human interaction. A canvas you and the model both edit. From thoughts to form. Coming soon as open source. That line is DrawIt's only, never the lab's. There is no public repository yet.
 
-Brand system: Daybreak, at https://github.com/chamuka-inc/chamuka-design
+Brand system: Daybreak, at https://github.com/chamuka-labs/chamuka-design
 
 Hire us: we build AI-native products and agent tooling for teams. Email dev@chamuka.ai.
 
@@ -29,24 +29,24 @@ Hire us: we build AI-native products and agent tooling for teams. Email dev@cham
 
 ### Other experiments
 
-- [FormIt](https://github.com/chamuka-inc/chamuka-formit): Form builder for creating, managing, and collecting responses to surveys and forms. Demo: https://chamuka-formit.vercel.app
-- [Waypoint](https://github.com/chamuka-inc/chamuka-waypoint): Desktop workspace for evidence-led career research. Site: https://chamuka-inc.github.io/chamuka-waypoint/
+- [FormIt](https://github.com/chamuka-labs/chamuka-formit): Form builder for creating, managing, and collecting responses to surveys and forms. Demo: https://chamuka-formit.vercel.app
+- [Waypoint](https://github.com/chamuka-labs/chamuka-waypoint): Desktop workspace for evidence-led career research. Site: https://chamuka-labs.github.io/chamuka-waypoint/
 
 ## Tools for agents
 
-- [Vmette](https://github.com/chamuka-inc/chamuka-vmette): Hardware-isolated microVM sandbox for running local AI agents on macOS. Docs: https://chamuka-inc.github.io/chamuka-vmette/
-- [Conduit](https://github.com/chamuka-inc/chamuka-conduit): Declarative action layer for AI agents over REST and MCP.
-- [CredVault](https://github.com/chamuka-inc/chamuka-credvault): Multi-tenant credential vault for AI agent integrations.
-- [Agent Run](https://github.com/chamuka-inc/chamuka-agent-run): Unattended runner for coding agents with rate-limit retry and verify-fix loops. Binary: `claude-run`.
-- [Skills](https://github.com/chamuka-inc/chamuka-skills): Reusable skills and reference guides for coding agents.
-- [Plane](https://github.com/chamuka-inc/chamuka-plane): Ephemeral compute platform built on Plane and OCI containers, with tiered isolation.
+- [Vmette](https://github.com/chamuka-labs/chamuka-vmette): Hardware-isolated microVM sandbox for running local AI agents on macOS. Docs: https://chamuka-labs.github.io/chamuka-vmette/
+- [Conduit](https://github.com/chamuka-labs/chamuka-conduit): Declarative action layer for AI agents over REST and MCP.
+- [CredVault](https://github.com/chamuka-labs/chamuka-credvault): Multi-tenant credential vault for AI agent integrations.
+- [Agent Run](https://github.com/chamuka-labs/chamuka-agent-run): Unattended runner for coding agents with rate-limit retry and verify-fix loops. Binary: `claude-run`.
+- [Skills](https://github.com/chamuka-labs/chamuka-skills): Reusable skills and reference guides for coding agents.
+- [Plane](https://github.com/chamuka-labs/chamuka-plane): Ephemeral compute platform built on Plane and OCI containers, with tiered isolation.
 
 ## Design system
 
-- [Daybreak](https://github.com/chamuka-inc/chamuka-design): tokens, React components, and brand assets.
+- [Daybreak](https://github.com/chamuka-labs/chamuka-design): tokens, React components, and brand assets.
 
 ## Optional
 
-- [Full descriptions](https://chamuka-inc.github.io/llms-full.txt)
-- [Voice](https://github.com/chamuka-inc/chamuka-design/blob/main/brand/docs/voice.md)
-- [Daybreak llms.txt](https://github.com/chamuka-inc/chamuka-design/blob/main/llms.txt)
+- [Full descriptions](https://chamuka-labs.github.io/llms-full.txt)
+- [Voice](https://github.com/chamuka-labs/chamuka-design/blob/main/brand/docs/voice.md)
+- [Daybreak llms.txt](https://github.com/chamuka-labs/chamuka-design/blob/main/llms.txt)

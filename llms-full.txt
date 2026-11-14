@@ -2,13 +2,13 @@
 
 > Chamuka Labs is an applied AI lab: we ship AI-native products, put research into practice, and build tools for AI agents.
 
-Website: https://chamuka-inc.github.io/
-Organization: https://github.com/chamuka-inc
+Website: https://chamuka-labs.github.io/
+Organization: https://github.com/chamuka-labs
 Lab site: https://chamuka.ai
 License: Apache-2.0
 Work and general: dev@chamuka.ai
 Security and conduct: security@chamuka.ai
-Brand system: Daybreak (https://github.com/chamuka-inc/chamuka-design)
+Brand system: Daybreak (https://github.com/chamuka-labs/chamuka-design)
 
 DrawIt is an experiment under agent and human interaction. A canvas you and the model both edit. From thoughts to form. Coming soon as open source. That line is DrawIt's only, never the lab's. There is no public repository yet.
 
@@ -34,51 +34,51 @@ A canvas you and the model both edit. From thoughts to form. Coming soon as open
 
 #### FormIt
 
-- Repository: https://github.com/chamuka-inc/chamuka-formit
+- Repository: https://github.com/chamuka-labs/chamuka-formit
 - Description: Form builder for creating, managing, and collecting responses to surveys and forms.
 - Summary: Multi-page form creation with text, single-choice, and multiple-choice questions; draft, publish, and archive states; public share links; and a drag-and-drop builder. Built with Next.js, tRPC, PostgreSQL, and NextAuth. Demo: https://chamuka-formit.vercel.app
 
 #### Waypoint
 
-- Repository: https://github.com/chamuka-inc/chamuka-waypoint
+- Repository: https://github.com/chamuka-labs/chamuka-waypoint
 - Description: Desktop workspace for evidence-led career research.
-- Summary: A personal career research desktop app for investigating direct-fit, adjacent, and stretch opportunities with source evidence and next steps. Implemented with Wails 2 and Go, SQLite, and TypeScript. Site: https://chamuka-inc.github.io/chamuka-waypoint/
+- Summary: A personal career research desktop app for investigating direct-fit, adjacent, and stretch opportunities with source evidence and next steps. Implemented with Wails 2 and Go, SQLite, and TypeScript. Site: https://chamuka-labs.github.io/chamuka-waypoint/
 
 ## Tools for agents
 
 ### Vmette
 
-- Repository: https://github.com/chamuka-inc/chamuka-vmette
+- Repository: https://github.com/chamuka-labs/chamuka-vmette
 - Description: Hardware-isolated microVM sandbox for running local AI agents on macOS.
-- Summary: Runs untrusted agent work in a hardware-isolated Linux VM on the local Mac, using Apple's Virtualization.framework rather than a container that shares the host kernel. Network is off until `--net`. Also exposed as an MCP server. Docs: https://chamuka-inc.github.io/chamuka-vmette/
+- Summary: Runs untrusted agent work in a hardware-isolated Linux VM on the local Mac, using Apple's Virtualization.framework rather than a container that shares the host kernel. Network is off until `--net`. Also exposed as an MCP server. Docs: https://chamuka-labs.github.io/chamuka-vmette/
 
 ### Conduit
 
-- Repository: https://github.com/chamuka-inc/chamuka-conduit
+- Repository: https://github.com/chamuka-labs/chamuka-conduit
 - Description: Declarative action layer for AI agents over REST and MCP.
 - Summary: Turns third-party SaaS APIs into callable, schema-typed actions, discoverable as LLM tools and over an MCP server. A new integration is a set of declarative manifests, not a code change. Credential storage is delegated to CredVault.
 
 ### CredVault
 
-- Repository: https://github.com/chamuka-inc/chamuka-credvault
+- Repository: https://github.com/chamuka-labs/chamuka-credvault
 - Description: Multi-tenant credential vault for AI agent integrations.
 - Summary: Stores per-end-user OAuth tokens and API keys for many providers, encrypts them at rest, and keeps them valid across expiry, rotation, and revocation so a caller can request a valid access token for a user at a provider.
 
 ### Agent Run
 
-- Repository: https://github.com/chamuka-inc/chamuka-agent-run
+- Repository: https://github.com/chamuka-labs/chamuka-agent-run
 - Description: Unattended runner for coding agents with rate-limit retry and verify-fix loops.
 - Summary: A non-interactive CLI (`claude-run`) that orchestrates coding agent sessions. Subcommands include a rate-limit retry wrapper, a generic verify-fix loop, an adversarial spec-compliance reviewer, and a YAML pipeline.
 
 ### Skills
 
-- Repository: https://github.com/chamuka-inc/chamuka-skills
+- Repository: https://github.com/chamuka-labs/chamuka-skills
 - Description: Reusable skills and reference guides for coding agents.
 - Summary: A Claude Code plugin of reusable agent skills: techniques, patterns, and reference guides. Each skill is a SKILL.md that conforms to the Agent Skills specification.
 
 ### Plane
 
-- Repository: https://github.com/chamuka-inc/chamuka-plane
+- Repository: https://github.com/chamuka-labs/chamuka-plane
 - Description: Ephemeral compute platform built on Plane and OCI containers, with tiered isolation.
 - Summary: A hard fork of jamsocket/plane. Adds an in-sandbox HTTP daemon, an egress proxy, operator tooling, and OCI runtime images around the upstream controller, drone, and proxy.
 
@@ -86,6 +86,6 @@ A canvas you and the model both edit. From thoughts to form. Coming soon as open
 
 ### Daybreak
 
-- Repository: https://github.com/chamuka-inc/chamuka-design
+- Repository: https://github.com/chamuka-labs/chamuka-design
 - Description: Daybreak, the Chamuka Labs design system: tokens, React components, brand assets.
 - Summary: Brand infrastructure for Chamuka Labs, not a product. Packages: @chamuka/tokens (DTCG JSON to CSS variables and Tailwind themes), @chamuka/ui (React 19 components), and @chamuka/icons (Daybreak mark and lockups). Logo masters, print, and voice live under /brand. Voice: founder-led, short, specific, slightly dry. Feel: playful, warm, African-rooted — not toy-like.
