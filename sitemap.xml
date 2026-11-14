@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://chamuka-inc.github.io/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://chamuka-inc.github.io/llms.txt</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://chamuka-inc.github.io/llms-full.txt</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>

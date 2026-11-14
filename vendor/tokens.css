@@ -1,0 +1,179 @@
+/* Chamuka Daybreak — design tokens
+   Generated from DTCG JSON in packages/tokens/src/tokens.
+   Screen values are authored in sRGB. Print equivalents: see brand/print/README.md
+   and brand/colors.json (CMYK method and Pantone nearest-match notes).
+*/
+
+:root {
+  /* Core */
+  --ember: #E24E1B; /* Master primary. DrawIt accent. Not body text on paper. */
+  --gold: #E6B422; /* Horizon bar and highlights. Never a product accent. */
+  --slate: #2B4C7E; /* Horizon rule, FormIt accent, info. */
+  --paper: #FFF8F1; /* Morning paper — default light background. */
+  --mist: #F3EBE0; /* Subtle surfaces and chips. */
+  --ink: #17141C; /* Text and mono lockups. */
+  --muted: #6B645C; /* Secondary text. AA on paper. */
+
+  /* Semantic */
+  --success: #1F8A5B; /* Success. AA large on paper only. */
+  --warning: #E0A100; /* Warning. Use on ink, not paper. */
+  --danger: #C5362B; /* Danger / error. AA on paper. */
+  --info: #2B4C7E; /* Info — same as slate. */
+  --play: #D9487A; /* Coral — playful-but-adult products (Play is an example). */
+  --forest: #2F6B4F; /* Forest — calm green products (Waypoint is an example). */
+  --mineral: #1F7A6B; /* Mineral — infra / platform tools (Vmette is an example). */
+
+  /* Neutral ramp */
+  --neutral-50: #FBF7F2;
+  --neutral-100: #F3EBE0;
+  --neutral-200: #E6D9C8;
+  --neutral-300: #D0C0AA;
+  --neutral-400: #B3A28A;
+  --neutral-500: #8F8170;
+  --neutral-600: #6B645C;
+  --neutral-700: #524C46;
+  --neutral-800: #3A3531;
+  --neutral-900: #241F1C;
+  --neutral-950: #17141C;
+
+  /* Light theme (default) — shadcn-style */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: #FFFFFF;
+  --popover-foreground: var(--ink);
+  --primary: var(--ember);
+  --primary-foreground: #FFFFFF; /* Large UI only; ember fails WCAG AA for small text on paper (3.74:1). */
+  --secondary: var(--mist);
+  --secondary-foreground: var(--ink);
+  --muted-bg: var(--mist);
+  --muted-foreground: var(--muted);
+  --accent: var(--slate);
+  --accent-foreground: var(--paper);
+  --destructive: var(--danger);
+  --destructive-foreground: #FFFFFF;
+  --border: #E6D9C8;
+  --input: #E6D9C8;
+  --ring: var(--ember);
+  --accent-drawit: var(--ember);
+  --accent-formit: var(--slate);
+  --accent-play: var(--play);
+  --accent-forest: var(--forest);
+  --accent-mineral: var(--mineral);
+
+  /* Typography, space, radius, motion, z-index */
+  --radius: 0.5rem; /* Shadcn --radius on :root. */
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-display: 56px;
+  --line-height-display: 64px;
+  --font-size-h1: 40px;
+  --line-height-h1: 48px;
+  --font-size-h2: 32px;
+  --line-height-h2: 40px;
+  --font-size-h3: 24px;
+  --line-height-h3: 32px;
+  --font-size-h4: 20px;
+  --line-height-h4: 28px;
+  --font-size-body: 16px;
+  --line-height-body: 24px;
+  --font-size-small: 14px;
+  --line-height-small: 20px;
+  --font-size-caption: 12px;
+  --line-height-caption: 16px;
+  --font-size-code: 14px;
+  --line-height-code: 22px;
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --easing-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --z-base: 0;
+  --z-dropdown: 50;
+  --z-sticky: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+  --z-tooltip: 500;
+}
+
+.dark,
+[data-theme="dark"] {
+  --background: #17141C;
+  --foreground: #FFF8F1;
+  --card: #241F1C;
+  --card-foreground: #FFF8F1;
+  --popover: #241F1C;
+  --popover-foreground: #FFF8F1;
+  --primary: #F06A3A; /* Slightly lifted ember so filled buttons hold contrast on ink. */
+  --primary-foreground: #17141C;
+  --secondary: #3A3531;
+  --secondary-foreground: #FFF8F1;
+  --muted-bg: #241F1C;
+  --muted-foreground: #A39484;
+  --accent: #7FA0D4; /* Lifted slate for text/links on ink; fills may still use #2B4C7E. */
+  --accent-foreground: #17141C;
+  --destructive: #E0564A;
+  --destructive-foreground: #17141C;
+  --border: #3A3531;
+  --input: #3A3531;
+  --ring: #F06A3A;
+}
+
+/* Tailwind CSS v4 */
+@theme {
+  --color-ember: #E24E1B;
+  --color-gold: #E6B422;
+  --color-slate: #2B4C7E;
+  --color-paper: #FFF8F1;
+  --color-mist: #F3EBE0;
+  --color-ink: #17141C;
+  --color-muted: #6B645C;
+  --color-success: #1F8A5B;
+  --color-warning: #E0A100;
+  --color-danger: #C5362B;
+  --color-info: #2B4C7E;
+  --color-play: #D9487A;
+  --color-forest: #2F6B4F;
+  --color-mineral: #1F7A6B;
+  --color-neutral-50: #FBF7F2;
+  --color-neutral-100: #F3EBE0;
+  --color-neutral-200: #E6D9C8;
+  --color-neutral-300: #D0C0AA;
+  --color-neutral-400: #B3A28A;
+  --color-neutral-500: #8F8170;
+  --color-neutral-600: #6B645C;
+  --color-neutral-700: #524C46;
+  --color-neutral-800: #3A3531;
+  --color-neutral-900: #241F1C;
+  --color-neutral-950: #17141C;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 2px rgb(23 20 28 / 0.06);
+  --shadow-md: 0 8px 20px rgb(23 20 28 / 0.08);
+  --shadow-lg: 0 18px 40px rgb(23 20 28 / 0.12);
+}

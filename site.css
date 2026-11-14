@@ -1,0 +1,370 @@
+/* Chamuka Labs site styles.
+   Tokens: vendor/tokens.css (and theme.css), built from
+   chamuka-inc/chamuka-design packages/tokens (@chamuka/tokens 0.1.0).
+   Layout follows templates/web-landing.svg.
+   Controls follow packages/ui/src/{button,card,link,container}.tsx.
+   Type scale follows packages/tokens/src/tokens/typography.json and
+   apps/docs/src/foundations/Typography.stories.tsx.
+*/
+
+/* theme.css values live in @theme, which browsers ignore without Tailwind.
+   These :root copies are the same numbers, so the static page can use them. */
+:root {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 2px rgb(23 20 28 / 0.06);
+  --shadow-md: 0 8px 20px rgb(23 20 28 / 0.08);
+  --shadow-lg: 0 18px 40px rgb(23 20 28 / 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #17141C;
+    --foreground: #FFF8F1;
+    --card: #241F1C;
+    --card-foreground: #FFF8F1;
+    --popover: #241F1C;
+    --popover-foreground: #FFF8F1;
+    --primary: #F06A3A;
+    --primary-foreground: #17141C;
+    --secondary: #3A3531;
+    --secondary-foreground: #FFF8F1;
+    --muted-bg: #241F1C;
+    --muted-foreground: #A39484;
+    --accent: #7FA0D4;
+    --accent-foreground: #17141C;
+    --destructive: #E0564A;
+    --destructive-foreground: #17141C;
+    --border: #3A3531;
+    --input: #3A3531;
+    --ring: #F06A3A;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--spacing-4);
+  top: -40px;
+  z-index: var(--z-overlay);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: var(--spacing-4);
+}
+
+.skip-link:focus-visible,
+.button:focus-visible,
+.link:focus-visible,
+.nav a:focus-visible,
+.card:focus-visible,
+.footer a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+}
+
+/* Container lg: mx-auto w-full px-4 max-w-5xl */
+.container {
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-4);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-6);
+  padding-block: var(--spacing-6);
+}
+
+.lockup {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.lockup-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lockup-light {
+    display: none;
+  }
+  .lockup-dark {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-5);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav a {
+  color: var(--foreground);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a.nav-accent {
+  color: var(--primary);
+}
+
+.hero {
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-16);
+}
+
+.hero h1 {
+  margin: 0 0 var(--spacing-6);
+  max-width: 22em;
+  font-family: var(--font-display);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h1);
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+}
+
+/* Button: packages/ui/src/button.tsx, size default / variant default + outline */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  height: 40px;
+  padding: 0 var(--spacing-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--duration-base) var(--easing-standard),
+    background-color var(--duration-base) var(--easing-standard),
+    border-color var(--duration-base) var(--easing-standard);
+}
+
+.button-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.button-primary:hover {
+  background: color-mix(in srgb, var(--primary) 90%, transparent);
+}
+
+.button-outline {
+  background: var(--background);
+  border-color: var(--input);
+  color: var(--foreground);
+}
+
+.button-outline:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+
+.section {
+  padding-bottom: var(--spacing-16);
+}
+
+.section h2 {
+  margin: 0 0 var(--spacing-6);
+  font-family: var(--font-display);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-h3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+}
+
+@media (min-width: 640px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card: packages/ui/src/card.tsx, with the gold horizon tick from templates/web-landing.svg.
+   Surface is --popover (white on paper, as in the landing template). */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--spacing-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--popover);
+  color: var(--card-foreground);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+a.card:hover .card-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-tick {
+  width: 32px;
+  height: 4px;
+  margin-bottom: var(--spacing-3);
+  border-radius: 1px;
+  background: var(--gold);
+}
+
+.card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.card-line {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-small);
+  color: var(--foreground);
+}
+
+.card-desc {
+  margin: 0;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  color: var(--muted-foreground);
+}
+
+.flagship .card-desc {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--foreground);
+}
+
+.site-footer {
+  padding-block: var(--spacing-8) var(--spacing-16);
+  border-top: 1px solid var(--border);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  color: var(--muted-foreground);
+}
+
+.site-footer p {
+  margin: 0 0 var(--spacing-2);
+}
+
+.site-footer a {
+  color: var(--muted-foreground);
+  text-underline-offset: 4px;
+}
+
+.site-footer a:hover {
+  color: var(--foreground);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2) var(--spacing-4);
+}
