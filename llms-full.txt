@@ -9,25 +9,27 @@ License: Apache-2.0
 Security: security@chamuka.ai
 Brand system: Daybreak (https://github.com/chamuka-inc/chamuka-design)
 
-DrawIt is the flagship. From thoughts to form. A canvas you and the model both edit. Coming soon as open source. That line is DrawIt's only, never the lab's.
+DrawIt is an experiment under agent and human interaction. A canvas you and the model both edit. From thoughts to form. Coming soon as open source. That line is DrawIt's only, never the lab's.
 
 This file expands the brief catalogue in /llms.txt with each public repository's description and a short README summary. It does not invent features.
 
-## Flagship
-
-### DrawIt
-
-From thoughts to form. A canvas you and the model both edit. Coming soon as open source.
-
 ## Experiments
 
-### FormIt
+### Agent and human interaction
+
+#### DrawIt
+
+A canvas you and the model both edit. From thoughts to form. Coming soon as open source.
+
+### Other experiments
+
+#### FormIt
 
 - Repository: https://github.com/chamuka-inc/chamuka-formit
 - Description: Form builder for creating, managing, and collecting responses to surveys and forms.
 - Summary: Multi-page form creation with text, single-choice, and multiple-choice questions; draft, publish, and archive states; public share links; and a drag-and-drop builder. Built with Next.js, tRPC, PostgreSQL, and NextAuth. Demo: https://chamuka-formit.vercel.app
 
-### Waypoint
+#### Waypoint
 
 - Repository: https://github.com/chamuka-inc/chamuka-waypoint
 - Description: Desktop workspace for evidence-led career research.

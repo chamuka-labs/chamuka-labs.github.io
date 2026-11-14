@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chamuka Labs</title>
-  <meta name="description" content="Applied AI lab. We ship products, put research to work, and build tools for agents. Flagship: DrawIt, a canvas you and the model both edit.">
+  <meta name="description" content="Applied AI lab. We ship products, put research to work, and build tools for agents.">
   <link rel="canonical" href="https://chamuka-inc.github.io/">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -14,14 +14,14 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chamuka Labs">
   <meta property="og:title" content="Chamuka Labs">
-  <meta property="og:description" content="Applied AI lab. We ship products, put research to work, and build tools for agents. Flagship: DrawIt, a canvas you and the model both edit.">
+  <meta property="og:description" content="Applied AI lab. We ship products, put research to work, and build tools for agents.">
   <meta property="og:url" content="https://chamuka-inc.github.io/">
   <meta property="og:image" content="https://chamuka-inc.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Chamuka Labs">
-  <meta name="twitter:description" content="Applied AI lab. We ship products, put research to work, and build tools for agents. Flagship: DrawIt, a canvas you and the model both edit.">
+  <meta name="twitter:description" content="Applied AI lab. We ship products, put research to work, and build tools for agents.">
   <meta name="twitter:image" content="https://chamuka-inc.github.io/og-image.png">
   <link rel="stylesheet" href="/fonts/fonts.css">
   <link rel="stylesheet" href="/vendor/tokens.css">
@@ -48,8 +48,14 @@
       "@id": "https://chamuka-inc.github.io/#website",
       "url": "https://chamuka-inc.github.io/",
       "name": "Chamuka Labs",
-      "description": "Applied AI lab. We ship products, put research to work, and build tools for agents. Flagship: DrawIt, a canvas you and the model both edit.",
+      "description": "Applied AI lab. We ship products, put research to work, and build tools for agents.",
       "publisher": { "@id": "https://chamuka.ai/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "DrawIt",
+      "description": "A canvas you and the model both edit. From thoughts to form. Coming soon as open source.",
+      "creator": { "@id": "https://chamuka.ai/#organization" }
     },
     {
       "@type": "SoftwareSourceCode",
@@ -149,29 +155,31 @@
       </div>
     </section>
 
-    <section class="section flagship" aria-labelledby="flagship-heading">
-      <h2 id="flagship-heading">Flagship</h2>
-      <article class="card">
-        <div class="card-tick" aria-hidden="true"></div>
-        <h3 class="card-title">DrawIt</h3>
-        <p class="card-line">From thoughts to form.</p>
-        <p class="card-desc">A canvas you and the model both edit. Coming soon as open source.</p>
-      </article>
-    </section>
-
     <section class="section" aria-labelledby="experiments-heading">
       <h2 id="experiments-heading">Experiments</h2>
-      <div class="grid grid-2">
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-formit">
+      <div class="group" aria-labelledby="agent-human-heading">
+        <h3 class="group-label" id="agent-human-heading">Agent and human interaction</h3>
+        <article class="card experiment-lead">
           <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">FormIt</h3>
-          <p class="card-desc">Form builder for creating, managing, and collecting responses to surveys and forms.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-waypoint">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Waypoint</h3>
-          <p class="card-desc">Desktop workspace for evidence-led career research.</p>
-        </a>
+          <h4 class="card-title">DrawIt</h4>
+          <p class="card-line">From thoughts to form.</p>
+          <p class="card-desc">A canvas you and the model both edit. Coming soon as open source.</p>
+        </article>
+      </div>
+      <div class="group" aria-labelledby="other-experiments-heading">
+        <h3 class="group-label" id="other-experiments-heading">Other experiments</h3>
+        <div class="grid grid-2">
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-formit">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h4 class="card-title">FormIt</h4>
+            <p class="card-desc">Form builder for creating, managing, and collecting responses to surveys and forms.</p>
+          </a>
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-waypoint">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h4 class="card-title">Waypoint</h4>
+            <p class="card-desc">Desktop workspace for evidence-led career research.</p>
+          </a>
+        </div>
       </div>
     </section>
 
