@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="520" height="180" fill="none" role="img" aria-labelledby="pl-title pl-desc">
+  <title id="pl-title">Plane layout</title>
+  <desc id="pl-desc">A hard fork of jamsocket/plane: controller, drone, and proxy, plus an in-sandbox daemon, egress proxy, and OCI runtime images with tiered isolation.</desc>
+  <rect width="520" height="180" rx="12" fill="#FFF8F1"/>
+  <g font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif">
+    <rect x="20" y="36" width="150" height="56" rx="8" fill="#FFFFFF" stroke="#1F7A6B"/>
+    <text x="95" y="70" text-anchor="middle" font-size="14" font-weight="600" fill="#17141C">controller</text>
+    <rect x="185" y="36" width="150" height="56" rx="8" fill="#FFFFFF" stroke="#1F7A6B"/>
+    <text x="260" y="70" text-anchor="middle" font-size="14" font-weight="600" fill="#17141C">drone</text>
+    <rect x="350" y="36" width="150" height="56" rx="8" fill="#FFFFFF" stroke="#1F7A6B"/>
+    <text x="425" y="70" text-anchor="middle" font-size="14" font-weight="600" fill="#17141C">proxy</text>
+    <rect x="20" y="108" width="230" height="48" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+    <text x="135" y="138" text-anchor="middle" font-size="13" fill="#6B645C">OCI images · agentd · egress</text>
+    <rect x="270" y="108" width="230" height="48" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+    <text x="385" y="138" text-anchor="middle" font-size="13" fill="#6B645C">tiered isolation</text>
+  </g>
+</svg>

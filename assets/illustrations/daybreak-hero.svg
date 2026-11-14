@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" fill="none" role="img" aria-labelledby="daybreak-title daybreak-desc">
+  <title id="daybreak-title">Daybreak over the horizon</title>
+  <desc id="daybreak-desc">A geometric sunrise in the Daybreak palette: an ember sun lifting over a slate horizon and gold bar, with acacia silhouettes on morning paper. The idea is that it has woken.</desc>
+  <defs>
+    <linearGradient id="sky" x1="360" y1="0" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2B4C7E"/>
+      <stop offset="0.38" stop-color="#D9487A" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#E24E1B"/>
+      <stop offset="0.72" stop-color="#E6B422"/>
+      <stop offset="1" stop-color="#FFF8F1"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="360" y1="368" x2="360" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F3EBE0"/>
+      <stop offset="1" stop-color="#E6D9C8"/>
+    </linearGradient>
+    <clipPath id="scene">
+      <rect width="720" height="520" rx="20"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#scene)">
+    <rect width="720" height="520" fill="url(#sky)"/>
+    <!-- Quiet concentric dawn rings; the sun itself stays ember. -->
+    <circle cx="360" cy="228" r="118" stroke="#FFF8F1" stroke-opacity="0.18" stroke-width="1.25"/>
+    <circle cx="360" cy="228" r="88" stroke="#E6B422" stroke-opacity="0.35" stroke-width="1.25"/>
+    <circle cx="360" cy="228" r="62" fill="#E24E1B"/>
+    <!-- Distant landforms -->
+    <path d="M-20 368 C80 318 150 338 240 352 C310 328 390 300 470 332 C560 308 640 318 760 348 L760 400 L-20 400 Z" fill="#2B4C7E" fill-opacity="0.35"/>
+    <path d="M-20 378 C70 348 140 358 230 372 C320 350 410 334 500 356 C590 338 670 348 760 368 L760 400 L-20 400 Z" fill="#17141C" fill-opacity="0.28"/>
+    <!-- Horizon and gold bar — same construction as the Daybreak mark -->
+    <line x1="48" y1="368" x2="672" y2="368" stroke="#2B4C7E" stroke-width="2"/>
+    <rect x="300" y="376" width="120" height="10" fill="#E6B422"/>
+    <rect y="386" width="720" height="134" fill="url(#ground)"/>
+    <!-- Acacia silhouettes: flat canopies, not cartoon -->
+    <g fill="#17141C">
+      <rect x="128" y="400" width="6" height="62" rx="1"/>
+      <ellipse cx="131" cy="392" rx="54" ry="18"/>
+      <ellipse cx="108" cy="404" rx="28" ry="10"/>
+      <ellipse cx="156" cy="406" rx="22" ry="8"/>
+      <rect x="538" y="412" width="5" height="50" rx="1"/>
+      <ellipse cx="540" cy="406" rx="42" ry="14"/>
+      <ellipse cx="522" cy="416" rx="20" ry="7"/>
+      <rect x="612" y="428" width="4" height="36" rx="1"/>
+      <ellipse cx="614" cy="422" rx="28" ry="10"/>
+    </g>
+    <g fill="#2F6B4F" fill-opacity="0.85">
+      <rect x="214" y="436" width="4" height="28"/>
+      <ellipse cx="216" cy="432" rx="18" ry="7"/>
+      <rect x="454" y="440" width="3.5" height="24"/>
+      <ellipse cx="456" cy="436" rx="16" ry="6"/>
+    </g>
+  </g>
+  <rect x="0.75" y="0.75" width="718.5" height="518.5" rx="19.25" stroke="#E6D9C8" stroke-width="1.5"/>
+</svg>

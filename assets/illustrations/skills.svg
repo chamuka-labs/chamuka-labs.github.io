@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160" fill="none" role="img" aria-labelledby="sk-title sk-desc">
+  <title id="sk-title">Skills pack</title>
+  <desc id="sk-desc">A Claude Code plugin of SKILL.md files that follow the Agent Skills specification.</desc>
+  <rect width="520" height="160" rx="12" fill="#FFF8F1"/>
+  <g font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif">
+    <rect x="28" y="32" width="150" height="96" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+    <rect x="28" y="32" width="150" height="8" rx="2" fill="#D9487A"/>
+    <text x="48" y="72" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" fill="#17141C">SKILL.md</text>
+    <text x="48" y="94" font-size="12" fill="#6B645C">frontmatter</text>
+    <text x="48" y="112" font-size="12" fill="#6B645C">instructions</text>
+    <rect x="186" y="32" width="150" height="96" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+    <rect x="186" y="32" width="150" height="8" rx="2" fill="#D9487A"/>
+    <text x="206" y="72" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" fill="#17141C">SKILL.md</text>
+    <text x="206" y="94" font-size="12" fill="#6B645C">patterns</text>
+    <text x="206" y="112" font-size="12" fill="#6B645C">references</text>
+    <rect x="344" y="32" width="148" height="96" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+    <rect x="344" y="32" width="148" height="8" rx="2" fill="#D9487A"/>
+    <text x="364" y="72" font-size="13" font-weight="600" fill="#17141C">plugin</text>
+    <text x="364" y="94" font-size="12" fill="#6B645C">claude plugin add</text>
+    <text x="364" y="112" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#6B645C">chamuka-skills</text>
+  </g>
+</svg>

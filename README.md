@@ -6,21 +6,23 @@ The public site is [https://chamuka-inc.github.io/](https://chamuka-inc.github.i
 
 ## Daybreak sources
 
-Visual design comes from [Daybreak](https://github.com/chamuka-inc/chamuka-design), the Chamuka Labs design system, at commit [`f6b2265299f19e30cc10dc45132419bc67f56fb3`](https://github.com/chamuka-inc/chamuka-design/commit/f6b2265299f19e30cc10dc45132419bc67f56fb3) (`@chamuka/tokens` 0.1.0, `@chamuka/ui` 0.1.0, `@chamuka/docs` 0.1.0).
+Visual design comes from [Daybreak](https://github.com/chamuka-inc/chamuka-design), the Chamuka Labs design system, at commit [`48a8df12547d9dd79a138953b6c4ec16be9fe45b`](https://github.com/chamuka-inc/chamuka-design/commit/48a8df12547d9dd79a138953b6c4ec16be9fe45b).
 
-Vendored from that commit:
+Vendored from that repository:
 
-- `vendor/tokens.css` and `vendor/theme.css`, generated from `packages/tokens/src/tokens` by `packages/tokens/src/build.ts`
-- Latin woff2 files in `fonts/` from the Fontsource packages loaded in `apps/docs/.storybook/preview.ts`: `@fontsource/sora` 5.2.8, `@fontsource/ibm-plex-sans` 5.2.8, and `@fontsource/ibm-plex-mono` 5.2.7 (SIL Open Font License)
+- `vendor/tokens.css` and `vendor/theme.css`, generated from `packages/tokens/src/tokens`
+- Latin woff2 files in `fonts/` from the Fontsource packages loaded in Daybreak Storybook: `@fontsource/sora`, `@fontsource/ibm-plex-sans`, and `@fontsource/ibm-plex-mono` (SIL Open Font License)
 - Lockup, mark, and favicon files from `brand/svg` and `brand/png`
 
-`site.css` maps those tokens onto the page. Buttons, cards, links, the container, the type scale, and the gold horizon ticks follow `packages/ui/src/button.tsx`, `card.tsx`, `link.tsx`, `container.tsx`, `apps/docs/src/foundations/Typography.stories.tsx`, and `templates/web-landing.svg`.
+Illustrations in `assets/illustrations/` are original site artwork in the Daybreak palette: a daybreak hero and diagrams taken from public READMEs. They do not invent product UI.
+
+`site.css` maps those tokens onto the page. Buttons, cards, the container, the type scale, and the gold horizon ticks follow Daybreak components and `templates/web-landing.svg`.
 
 ## Agent and search files
 
 - `llms.txt` and `llms-full.txt`: a plain-text catalogue of the lab and its public repositories
 - `robots.txt` and `sitemap.xml`
-- Open Graph, Twitter, and JSON-LD metadata on `index.html`
+- Open Graph, Twitter card, and JSON-LD metadata on `index.html`
 
 ## License
 

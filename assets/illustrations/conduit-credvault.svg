@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 300" width="840" height="300" fill="none" role="img" aria-labelledby="flow-title flow-desc">
+  <title id="flow-title">Conduit and CredVault flow</title>
+  <desc id="flow-desc">An agent calls Conduit over REST or MCP. Conduit asks CredVault for a valid credential, then executes the declared action against provider APIs. Conduit does not store secrets.</desc>
+  <rect width="840" height="300" rx="12" fill="#FFF8F1"/>
+  <!-- Agent -->
+  <rect x="32" y="108" width="140" height="84" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <text x="102" y="144" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="600" fill="#17141C">Agent</text>
+  <text x="102" y="166" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">tool call</text>
+  <path d="M172 150 h36" stroke="#2B4C7E" stroke-width="1.5"/>
+  <path d="M202 144 l8 6 -8 6" fill="#2B4C7E"/>
+  <!-- Conduit -->
+  <rect x="216" y="84" width="220" height="132" rx="10" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.5"/>
+  <rect x="216" y="84" width="8" height="132" rx="2" fill="#2B4C7E"/>
+  <text x="326" y="124" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="600" fill="#17141C">Conduit</text>
+  <text x="326" y="146" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">Declarative actions</text>
+  <text x="326" y="166" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">REST + MCP</text>
+  <text x="326" y="186" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">No credential store</text>
+  <!-- vertical to credvault -->
+  <path d="M326 216 v28" stroke="#1F7A6B" stroke-width="1.5"/>
+  <path d="M320 238 l6 8 6-8" fill="#1F7A6B"/>
+  <rect x="216" y="248" width="220" height="36" rx="8" fill="#FFFFFF" stroke="#1F7A6B"/>
+  <text x="326" y="271" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500" fill="#17141C">CredVault · valid token for user@provider</text>
+  <!-- to APIs -->
+  <path d="M436 150 h36" stroke="#2B4C7E" stroke-width="1.5"/>
+  <path d="M466 144 l8 6 -8 6" fill="#2B4C7E"/>
+  <rect x="480" y="72" width="328" height="156" rx="10" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <text x="644" y="112" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="600" fill="#17141C">Provider APIs / MCP</text>
+  <text x="644" y="138" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Manifest in. HTTP out.</text>
+  <text x="644" y="162" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Schema-typed actions, one engine.</text>
+  <text x="644" y="192" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" fill="#2B4C7E">identity → token → request → response</text>
+</svg>

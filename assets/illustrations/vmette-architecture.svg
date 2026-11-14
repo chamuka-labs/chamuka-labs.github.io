@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="840" height="420" fill="none" role="img" aria-labelledby="vmette-title vmette-desc">
+  <title id="vmette-title">Vmette architecture</title>
+  <desc id="vmette-desc">An agent host talks to Vmette over MCP. Untrusted work runs in a hardware-isolated Linux microVM on the macOS host, with its own kernel. Only named directories are shared; network stays off until requested.</desc>
+  <rect width="840" height="420" rx="12" fill="#FFF8F1"/>
+  <!-- Agent host -->
+  <rect x="48" y="28" width="744" height="72" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <rect x="48" y="28" width="8" height="72" rx="2" fill="#1F7A6B"/>
+  <text x="72" y="58" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="600" fill="#17141C">Agent host</text>
+  <text x="72" y="80" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Claude Code, Cursor, and other MCP clients. Native host tools still run on the Mac unless you restrict them.</text>
+  <!-- Arrow -->
+  <path d="M420 100 v28" stroke="#2B4C7E" stroke-width="1.5"/>
+  <path d="M414 122 l6 8 6-8" fill="#2B4C7E"/>
+  <text x="432" y="122" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#2B4C7E">MCP · execute · workspace · desktop</text>
+  <!-- macOS host -->
+  <rect x="48" y="140" width="744" height="248" rx="12" fill="#FFFFFF" stroke="#2B4C7E" stroke-width="1.5"/>
+  <text x="68" y="168" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500" fill="#2B4C7E">macOS host · Apple Virtualization.framework</text>
+  <!-- microVM -->
+  <rect x="68" y="184" width="480" height="180" rx="10" fill="#F3EBE0" stroke="#1F7A6B" stroke-width="1.5"/>
+  <text x="88" y="214" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="600" fill="#17141C">Linux microVM</text>
+  <text x="88" y="236" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Own kernel. Hardware isolation, not a container.</text>
+  <rect x="88" y="256" width="440" height="84" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <text x="108" y="288" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="500" fill="#17141C">Untrusted agent work</text>
+  <text x="108" y="310" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Boots in about a second. Disappears when done.</text>
+  <!-- Side notes -->
+  <rect x="568" y="184" width="204" height="80" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <text x="584" y="214" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500" fill="#17141C">virtio-fs shares</text>
+  <text x="584" y="236" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Only directories you name.</text>
+  <rect x="568" y="276" width="204" height="88" rx="8" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <text x="584" y="308" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500" fill="#17141C">Network</text>
+  <text x="584" y="330" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">Default deny.</text>
+  <text x="584" y="348" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="12" fill="#1F7A6B">--net to opt in</text>
+</svg>

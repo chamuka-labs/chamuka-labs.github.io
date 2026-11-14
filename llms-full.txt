@@ -6,12 +6,21 @@ Website: https://chamuka-inc.github.io/
 Organization: https://github.com/chamuka-inc
 Lab site: https://chamuka.ai
 License: Apache-2.0
-Security: security@chamuka.ai
+Work and general: dev@chamuka.ai
+Security and conduct: security@chamuka.ai
 Brand system: Daybreak (https://github.com/chamuka-inc/chamuka-design)
 
-DrawIt is an experiment under agent and human interaction. A canvas you and the model both edit. From thoughts to form. Coming soon as open source. That line is DrawIt's only, never the lab's.
+DrawIt is an experiment under agent and human interaction. A canvas you and the model both edit. From thoughts to form. Coming soon as open source. That line is DrawIt's only, never the lab's. There is no public repository yet.
 
-This file expands the brief catalogue in /llms.txt with each public repository's description and a short README summary. It does not invent features.
+Hire us: we build AI-native products and agent tooling for teams. Email dev@chamuka.ai.
+
+This file expands the brief catalogue in /llms.txt with each public repository's description and a short README summary. It does not invent features. Research means applied engineering only: no papers, benchmarks, or evaluation claims.
+
+## What we do
+
+- Products: AI-native products. The model is in the artefact, not a chat panel on the side.
+- Applied research: engineering that puts methods into running systems.
+- Tools for agents: isolation, credentials, skills, and runtimes.
 
 ## Experiments
 
@@ -19,7 +28,7 @@ This file expands the brief catalogue in /llms.txt with each public repository's
 
 #### DrawIt
 
-A canvas you and the model both edit. From thoughts to form. Coming soon as open source.
+A canvas you and the model both edit. From thoughts to form. Coming soon as open source. No public repository.
 
 ### Other experiments
 
@@ -41,7 +50,7 @@ A canvas you and the model both edit. From thoughts to form. Coming soon as open
 
 - Repository: https://github.com/chamuka-inc/chamuka-vmette
 - Description: Hardware-isolated microVM sandbox for running local AI agents on macOS.
-- Summary: Runs untrusted agent work in a hardware-isolated Linux VM on the local Mac, using Apple's Virtualization.framework rather than a container that shares the host kernel. Also exposed as an MCP server. Docs: https://chamuka-inc.github.io/chamuka-vmette/
+- Summary: Runs untrusted agent work in a hardware-isolated Linux VM on the local Mac, using Apple's Virtualization.framework rather than a container that shares the host kernel. Network is off until `--net`. Also exposed as an MCP server. Docs: https://chamuka-inc.github.io/chamuka-vmette/
 
 ### Conduit
 
@@ -59,7 +68,7 @@ A canvas you and the model both edit. From thoughts to form. Coming soon as open
 
 - Repository: https://github.com/chamuka-inc/chamuka-agent-run
 - Description: Unattended runner for coding agents with rate-limit retry and verify-fix loops.
-- Summary: A non-interactive CLI that orchestrates coding agent sessions. Subcommands include a rate-limit retry wrapper, a generic verify-fix loop, and an adversarial spec-compliance reviewer.
+- Summary: A non-interactive CLI (`claude-run`) that orchestrates coding agent sessions. Subcommands include a rate-limit retry wrapper, a generic verify-fix loop, an adversarial spec-compliance reviewer, and a YAML pipeline.
 
 ### Skills
 
@@ -79,4 +88,4 @@ A canvas you and the model both edit. From thoughts to form. Coming soon as open
 
 - Repository: https://github.com/chamuka-inc/chamuka-design
 - Description: Daybreak, the Chamuka Labs design system: tokens, React components, brand assets.
-- Summary: Brand infrastructure for Chamuka Labs, not a product. Packages: @chamuka/tokens (DTCG JSON to CSS variables and Tailwind themes), @chamuka/ui (React 19 components), and @chamuka/icons (Daybreak mark and lockups). Logo masters, print, and voice live under /brand. Voice: founder-led, short, specific, slightly dry.
+- Summary: Brand infrastructure for Chamuka Labs, not a product. Packages: @chamuka/tokens (DTCG JSON to CSS variables and Tailwind themes), @chamuka/ui (React 19 components), and @chamuka/icons (Daybreak mark and lockups). Logo masters, print, and voice live under /brand. Voice: founder-led, short, specific, slightly dry. Feel: playful, warm, African-rooted — not toy-like.

@@ -1,3 +1,4 @@
-Generated from chamuka-inc/chamuka-design@f6b2265299f19e30cc10dc45132419bc67f56fb3
+Generated from chamuka-inc/chamuka-design@48a8df12547d9dd79a138953b6c4ec16be9fe45b
 packages/tokens/src/build.ts and packages/tokens/src/tokens/*
 @chamuka/tokens 0.1.0
+Brand SVG lockups and marks copied from brand/svg on that commit.

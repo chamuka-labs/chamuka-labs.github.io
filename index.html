@@ -36,11 +36,23 @@
       "name": "Chamuka Labs",
       "url": "https://chamuka.ai",
       "description": "Chamuka Labs is an applied AI lab: we ship AI-native products, put research into practice, and build tools for AI agents.",
-      "email": "security@chamuka.ai",
+      "email": "dev@chamuka.ai",
       "logo": "https://chamuka-inc.github.io/assets/mark.png",
       "sameAs": [
-        "https://github.com/chamuka-inc",
-        "https://x.com/swiftugandan"
+        "https://github.com/chamuka-inc"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "dev@chamuka.ai",
+          "url": "https://chamuka.ai"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "security",
+          "email": "security@chamuka.ai"
+        }
       ]
     },
     {
@@ -135,101 +147,254 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="container site-header">
-    <a href="/" aria-label="Chamuka Labs home">
-      <img class="lockup lockup-light" src="/assets/lockup-horizontal.svg" alt="Chamuka Labs" width="188" height="48">
-      <img class="lockup lockup-dark" src="/assets/lockup-horizontal-mono-light.svg" alt="" width="188" height="48">
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="https://github.com/chamuka-inc">GitHub</a>
-      <a href="https://github.com/chamuka-inc/chamuka-design">Daybreak</a>
-      <a class="nav-accent" href="https://chamuka.ai">chamuka.ai</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" aria-label="Chamuka Labs home">
+        <img class="lockup lockup-light" src="/assets/lockup-horizontal.svg" alt="Chamuka Labs" width="188" height="48">
+        <img class="lockup lockup-dark" src="/assets/lockup-horizontal-mono-light.svg" alt="" width="188" height="48">
+      </a>
+      <nav class="nav nav-desktop" aria-label="Primary">
+        <a href="#what-we-do">What we do</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#tools">Tools</a>
+        <a href="#open-source">Open source</a>
+        <a class="nav-accent" href="#hire">Hire us</a>
+        <a href="https://github.com/chamuka-inc">GitHub</a>
+      </nav>
+      <details class="nav-menu">
+        <summary>Menu</summary>
+        <nav class="nav" aria-label="Primary">
+          <a href="#what-we-do">What we do</a>
+          <a href="#experiments">Experiments</a>
+          <a href="#tools">Tools</a>
+          <a href="#open-source">Open source</a>
+          <a class="nav-accent" href="#hire">Hire us</a>
+          <a href="https://github.com/chamuka-inc">GitHub</a>
+        </nav>
+      </details>
+    </div>
   </header>
-  <main id="main" class="container">
-    <section class="hero">
-      <h1>Chamuka Labs is an applied AI lab: we ship AI-native products, put research into practice, and build tools for AI agents.</h1>
-      <div class="hero-actions">
-        <a class="button button-primary" href="https://github.com/chamuka-inc">Open on GitHub</a>
-        <a class="button button-outline" href="https://chamuka.ai">chamuka.ai</a>
+  <main id="main">
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="hero-kicker">Applied AI lab</p>
+          <h1 id="hero-heading">Chamuka Labs is an applied AI lab: we ship AI-native products, put research into practice, and build tools for AI agents.</h1>
+          <p class="hero-lead">Founder-led. Public work is Apache-2.0. Daybreak is the design system — morning paper, ember sun, gold on the horizon.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:dev@chamuka.ai?subject=Work%20with%20Chamuka%20Labs">Hire us</a>
+            <a class="button button-outline" href="https://github.com/chamuka-inc">Open on GitHub</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="/assets/illustrations/daybreak-hero.svg" width="720" height="520" alt="Geometric daybreak: an ember sun over a slate horizon and gold bar, with acacia silhouettes on morning paper.">
+          <figcaption>Daybreak. The mark is a sun that has cleared the horizon.</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section class="band band-mist" id="what-we-do" aria-labelledby="what-heading">
+      <div class="container">
+        <h2 id="what-heading">What we do</h2>
+        <p class="section-intro">Three lines of work. Products you can run, engineering that puts research into practice, and tools so agents can act without inheriting the host.</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h3 class="card-title">Products</h3>
+            <p class="card-desc">We ship AI-native products. The model is in the artefact — a shared canvas, a form, a research workspace — not a chat panel glued to the side.</p>
+          </article>
+          <article class="card">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h3 class="card-title">Applied research</h3>
+            <p class="card-desc">Research here means applied engineering: take a method, put it in a running system, keep the boundary honest. No papers, no leaderboards, no evaluation claims.</p>
+          </article>
+          <article class="card">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h3 class="card-title">Tools for agents</h3>
+            <p class="card-desc">Isolation, credentials, skills, and runtimes. The work an agent should not do on your laptop stays in a VM, a vault, or a declared action.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="experiments-heading">
-      <h2 id="experiments-heading">Experiments</h2>
-      <div class="group" aria-labelledby="agent-human-heading">
-        <h3 class="group-label" id="agent-human-heading">Agent and human interaction</h3>
-        <article class="card experiment-lead">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h4 class="card-title">DrawIt</h4>
-          <p class="card-line">From thoughts to form.</p>
-          <p class="card-desc">A canvas you and the model both edit. Coming soon as open source.</p>
-        </article>
+    <section class="band" id="experiments" aria-labelledby="experiments-heading">
+      <div class="container">
+        <h2 id="experiments-heading">Experiments</h2>
+        <p class="section-intro">These are experiments, not launched products. DrawIt is the one about a person and a model editing the same board.</p>
+
+        <div class="group" aria-labelledby="agent-human-heading">
+          <h3 class="group-label" id="agent-human-heading">Agent and human interaction</h3>
+          <article class="card experiment-lead">
+            <div class="card-tick card-tick-ember" aria-hidden="true"></div>
+            <h4 class="card-title">DrawIt</h4>
+            <p class="card-line">From thoughts to form.</p>
+            <p class="card-desc">A canvas you and the model both edit. Coming soon as open source.</p>
+            <span class="badge">Coming soon as open source</span>
+            <figure class="figure figure-flush">
+              <img src="/assets/illustrations/drawit.svg" width="640" height="220" alt="Abstract shared canvas with two pointers, one for you and one for the model, over a sun-and-horizon sketch. Not a product screenshot.">
+            </figure>
+          </article>
+        </div>
+
+        <div class="group" aria-labelledby="other-experiments-heading">
+          <h3 class="group-label" id="other-experiments-heading">Other experiments</h3>
+          <div class="grid grid-2">
+            <article class="card">
+              <div class="card-tick card-tick-slate" aria-hidden="true"></div>
+              <h4 class="card-title">FormIt</h4>
+              <p class="card-desc">Form builder for creating, managing, and collecting responses to surveys and forms. Multi-page forms; text, single-choice, and multiple-choice questions; draft, publish, and archive; public share links.</p>
+              <p class="card-meta">
+                <a class="inline-link" href="https://github.com/chamuka-inc/chamuka-formit">github.com/chamuka-inc/chamuka-formit</a>
+                ·
+                <a class="inline-link" href="https://chamuka-formit.vercel.app">Live demo</a>
+              </p>
+              <figure class="figure figure-flush">
+                <img src="/assets/illustrations/formit.svg" width="520" height="160" alt="Diagram of a multi-page form moving from questions to a public share link, with draft, publish, and archive states.">
+              </figure>
+            </article>
+            <article class="card">
+              <div class="card-tick card-tick-forest" aria-hidden="true"></div>
+              <h4 class="card-title">Waypoint</h4>
+              <p class="card-desc">Desktop workspace for evidence-led career research. Direct-fit, adjacent, and stretch opportunities with source evidence and next steps. Data stays on the machine.</p>
+              <p class="card-meta">
+                <a class="inline-link" href="https://github.com/chamuka-inc/chamuka-waypoint">github.com/chamuka-inc/chamuka-waypoint</a>
+                ·
+                <a class="inline-link" href="https://chamuka-inc.github.io/chamuka-waypoint/">Site</a>
+              </p>
+              <figure class="figure figure-flush">
+                <img src="/assets/illustrations/waypoint.svg" width="520" height="160" alt="Diagram of Waypoint: a local profile, sourced research, then direct, adjacent, and stretch roles with evidence kept.">
+              </figure>
+            </article>
+          </div>
+        </div>
       </div>
-      <div class="group" aria-labelledby="other-experiments-heading">
-        <h3 class="group-label" id="other-experiments-heading">Other experiments</h3>
+    </section>
+
+    <section class="band band-mist" id="tools" aria-labelledby="tools-heading">
+      <div class="container">
+        <h2 id="tools-heading">Tools for agents</h2>
+        <p class="section-intro">Open source under Apache-2.0. Diagrams below follow the public READMEs — host and guest, then the credential broker — not invented UI.</p>
+
+        <div class="tool-feature">
+          <div class="tool-copy">
+            <div class="card-tick card-tick-mineral" aria-hidden="true"></div>
+            <h3>Vmette</h3>
+            <p>Hardware-isolated microVM sandbox for running local AI agents on macOS. Untrusted work runs in a Linux VM with its own kernel, via Apple’s Virtualization.framework, not a container that shares yours. Network is off until you pass <code>--net</code>. Also an MCP server.</p>
+            <p><a class="inline-link" href="https://github.com/chamuka-inc/chamuka-vmette">github.com/chamuka-inc/chamuka-vmette</a><br>
+            <a class="inline-link" href="https://chamuka-inc.github.io/chamuka-vmette/">Docs</a></p>
+          </div>
+          <figure class="figure">
+            <img src="/assets/illustrations/vmette-architecture.svg" width="840" height="420" alt="Vmette architecture: an agent host talks over MCP to a macOS host, where untrusted work runs inside a hardware-isolated Linux microVM. Only named directories are shared; network is default deny.">
+            <figcaption>Host, microVM, agent isolation. The guest has its own kernel.</figcaption>
+          </figure>
+        </div>
+
+        <div class="tool-feature">
+          <div class="tool-copy">
+            <div class="card-tick card-tick-slate" aria-hidden="true"></div>
+            <h3>Conduit and CredVault</h3>
+            <p>Conduit is a declarative action layer for AI agents over REST and MCP. A new integration is a set of manifests, not a code change. It does not store credentials.</p>
+            <p>CredVault is the vault: per-end-user OAuth tokens and API keys, encrypted at rest, kept valid across expiry and rotation. Conduit asks it for a token, then calls the API.</p>
+            <p>
+              <a class="inline-link" href="https://github.com/chamuka-inc/chamuka-conduit">github.com/chamuka-inc/chamuka-conduit</a><br>
+              <a class="inline-link" href="https://github.com/chamuka-inc/chamuka-credvault">github.com/chamuka-inc/chamuka-credvault</a>
+            </p>
+          </div>
+          <figure class="figure">
+            <img src="/assets/illustrations/conduit-credvault.svg" width="840" height="300" alt="Flow from an agent to Conduit, which fetches a valid token from CredVault, then executes the declared action against provider APIs over REST or MCP.">
+            <figcaption>Agent → Conduit → CredVault, then out to APIs.</figcaption>
+          </figure>
+        </div>
+
         <div class="grid grid-2">
-          <a class="card" href="https://github.com/chamuka-inc/chamuka-formit">
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-agent-run">
             <div class="card-tick" aria-hidden="true"></div>
-            <h4 class="card-title">FormIt</h4>
-            <p class="card-desc">Form builder for creating, managing, and collecting responses to surveys and forms.</p>
+            <h3 class="card-title">Agent Run</h3>
+            <p class="card-desc">Unattended runner for coding agents with rate-limit retry and verify-fix loops. The binary is still <code>claude-run</code>: retry, verify, review, and a YAML pipeline.</p>
+            <figure class="figure figure-flush">
+              <img src="/assets/illustrations/agent-run.svg" width="520" height="160" alt="Four Agent Run steps in a row: retry, verify, review, pipeline.">
+            </figure>
           </a>
-          <a class="card" href="https://github.com/chamuka-inc/chamuka-waypoint">
-            <div class="card-tick" aria-hidden="true"></div>
-            <h4 class="card-title">Waypoint</h4>
-            <p class="card-desc">Desktop workspace for evidence-led career research.</p>
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-skills">
+            <div class="card-tick card-tick-coral" aria-hidden="true"></div>
+            <h3 class="card-title">Skills</h3>
+            <p class="card-desc">Reusable skills and reference guides for coding agents. A Claude Code plugin of <code>SKILL.md</code> files that conform to the Agent Skills specification.</p>
+            <figure class="figure figure-flush">
+              <img src="/assets/illustrations/skills.svg" width="520" height="160" alt="Three skill cards: SKILL.md files with frontmatter and instructions, collected as the chamuka-skills plugin.">
+            </figure>
+          </a>
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-plane">
+            <div class="card-tick card-tick-mineral" aria-hidden="true"></div>
+            <h3 class="card-title">Plane</h3>
+            <p class="card-desc">Ephemeral compute platform built on Plane and OCI containers, with tiered isolation. Hard fork of jamsocket/plane, plus an in-sandbox HTTP daemon, egress proxy, and operator tooling.</p>
+            <figure class="figure figure-flush">
+              <img src="/assets/illustrations/plane.svg" width="520" height="180" alt="Plane layout: controller, drone, and proxy, with OCI images, an in-sandbox daemon, egress, and tiered isolation.">
+            </figure>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="tools-heading">
-      <h2 id="tools-heading">Tools for agents</h2>
-      <div class="grid grid-3">
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-vmette">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Vmette</h3>
-          <p class="card-desc">Hardware-isolated microVM sandbox for running local AI agents on macOS.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-conduit">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Conduit</h3>
-          <p class="card-desc">Declarative action layer for AI agents over REST and MCP.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-credvault">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">CredVault</h3>
-          <p class="card-desc">Multi-tenant credential vault for AI agent integrations.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-agent-run">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Agent Run</h3>
-          <p class="card-desc">Unattended runner for coding agents with rate-limit retry and verify-fix loops.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-skills">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Skills</h3>
-          <p class="card-desc">Reusable skills and reference guides for coding agents.</p>
-        </a>
-        <a class="card" href="https://github.com/chamuka-inc/chamuka-plane">
-          <div class="card-tick" aria-hidden="true"></div>
-          <h3 class="card-title">Plane</h3>
-          <p class="card-desc">Ephemeral compute platform built on Plane and OCI containers, with tiered isolation.</p>
-        </a>
+    <section class="band" id="open-source" aria-labelledby="open-heading">
+      <div class="container">
+        <h2 id="open-heading">Open source and principles</h2>
+        <p class="section-intro">Everything listed here is Apache-2.0, except DrawIt, which is not public yet. Daybreak is brand infrastructure, not a product.</p>
+        <dl class="principles">
+          <div class="principle">
+            <dt>Apache-2.0</dt>
+            <dd>Public repositories ship under the Apache License 2.0. Forks of Daybreak must rebrand; the names and marks are not a licence to look like Chamuka Labs.</dd>
+          </div>
+          <div class="principle">
+            <dt>Plain first</dt>
+            <dd>Say what the thing is in one sentence. Experiments stay labelled experiments. We do not invent customers, logos, testimonials, or metrics.</dd>
+          </div>
+          <div class="principle">
+            <dt>Applied, not published</dt>
+            <dd>Research means engineering that runs. We do not claim papers, benchmarks, or evaluation results.</dd>
+          </div>
+          <div class="principle">
+            <dt>Daybreak</dt>
+            <dd>Tokens, React components, and brand assets. Sora for headings, IBM Plex Sans for body, IBM Plex Mono for code. Ember, gold, slate, cream, ink.</dd>
+          </div>
+        </dl>
+        <div class="grid grid-2 open-follow">
+          <a class="card" href="https://github.com/chamuka-inc/chamuka-design">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h3 class="card-title">Daybreak</h3>
+            <p class="card-desc">The Chamuka Labs design system: tokens, React components, brand assets.</p>
+            <figure class="figure figure-flush">
+              <img src="/assets/illustrations/daybreak-system.svg" width="520" height="140" alt="Daybreak colour tokens: ember, gold, slate, paper, ink, coral, forest, and mineral.">
+            </figure>
+          </a>
+          <article class="card">
+            <div class="card-tick" aria-hidden="true"></div>
+            <h3 class="card-title">Org and licence</h3>
+            <p class="card-desc">GitHub owner is chamuka-inc. The public name is Chamuka Labs. Report security issues and conduct concerns to security@chamuka.ai.</p>
+            <p class="card-meta">
+              <a class="inline-link" href="https://github.com/chamuka-inc">github.com/chamuka-inc</a>
+              ·
+              <a class="inline-link" href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="design-heading">
-      <h2 id="design-heading">Design system</h2>
-      <a class="card" href="https://github.com/chamuka-inc/chamuka-design">
-        <div class="card-tick" aria-hidden="true"></div>
-        <h3 class="card-title">Daybreak</h3>
-        <p class="card-desc">Tokens, React components, and brand assets.</p>
-      </a>
+    <section class="band band-ink" id="hire" aria-labelledby="hire-heading">
+      <div class="container hire-panel">
+        <p class="hero-kicker">Work with us</p>
+        <h2 id="hire-heading">Hire us: we build AI-native products and agent tooling for teams</h2>
+        <p class="section-intro">Same posture as the lab. We will ship the product, put the method into a running system, or build the isolation and credential layer your agents actually need. Small, founder-led, specific about the boundary.</p>
+        <div class="hero-actions">
+          <a class="button button-on-ink" href="mailto:dev@chamuka.ai?subject=Work%20with%20Chamuka%20Labs">Email Chamuka Labs</a>
+          <a class="button button-outline-on-ink" href="https://github.com/chamuka-inc">See the work</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="container site-footer">
-    <p>Public work is licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>. Report security issues to <a href="mailto:security@chamuka.ai">security@chamuka.ai</a>.</p>
+    <p>Public work is licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>.</p>
+    <p>General and work: <a href="mailto:dev@chamuka.ai">dev@chamuka.ai</a>. Security and conduct: <a href="mailto:security@chamuka.ai">security@chamuka.ai</a>.</p>
     <p class="footer-links">
       <a href="https://chamuka.ai">chamuka.ai</a>
       <a href="https://github.com/chamuka-inc">GitHub</a>

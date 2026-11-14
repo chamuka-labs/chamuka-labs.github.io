@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" fill="none" role="img" aria-labelledby="di-title di-desc">
+  <title id="di-title">DrawIt, a shared canvas</title>
+  <desc id="di-desc">Abstract shared canvas: a person and a model both edit the same board. Not a product screenshot.</desc>
+  <rect width="640" height="220" rx="12" fill="#FFF8F1"/>
+  <rect x="24" y="24" width="592" height="172" rx="10" fill="#FFFFFF" stroke="#E6D9C8"/>
+  <!-- two pointers -->
+  <path d="M120 86 l18 46 8-18 22 8 z" fill="#E24E1B"/>
+  <text x="120" y="158" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">you</text>
+  <path d="M430 70 l14 40 10-14 20 4 z" fill="#2B4C7E"/>
+  <text x="430" y="138" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#6B645C">model</text>
+  <!-- shared shapes, not a UI chrome replica -->
+  <circle cx="300" cy="100" r="28" stroke="#E24E1B" stroke-width="2"/>
+  <line x1="250" y1="148" x2="430" y2="148" stroke="#2B4C7E" stroke-width="1.5"/>
+  <rect x="268" y="154" width="64" height="10" fill="#E6B422"/>
+  <text x="320" y="54" text-anchor="middle" font-family="IBM Plex Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#6B645C">one canvas, two editors</text>
+</svg>
